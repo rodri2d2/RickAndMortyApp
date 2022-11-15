@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var vm: TESTVm
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("TEsting")
+
+            if let characters = vm.testCharacters {
+                ForEach(characters.characters) { character in
+                    Text(character.name)
+                }
+            }
+
         }
-        .padding()
+        .onAppear {
+            vm.fetchAll()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(vm: TESTVm())
     }
 }
