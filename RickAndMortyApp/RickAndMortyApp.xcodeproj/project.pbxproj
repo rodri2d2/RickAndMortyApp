@@ -21,6 +21,16 @@
 		5B60AEB62922B50C000AA2A1 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEB52922B50C000AA2A1 /* Episode.swift */; };
 		5B60AEB82922B60A000AA2A1 /* EpisodeBaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEB72922B60A000AA2A1 /* EpisodeBaseInfo.swift */; };
 		5B60AEBA2922B63D000AA2A1 /* EpisodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEB92922B63D000AA2A1 /* EpisodeInfo.swift */; };
+		5B60AEBE2922B7B1000AA2A1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEBD2922B7B1000AA2A1 /* Network.swift */; };
+		5B60AEC02922B7DD000AA2A1 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEBF2922B7DD000AA2A1 /* NetworkingError.swift */; };
+		5B60AEC22922B8F4000AA2A1 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEC12922B8F4000AA2A1 /* URLRequestBuilder.swift */; };
+		5B60AEC62922BB72000AA2A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEC52922BB72000AA2A1 /* NetworkManager.swift */; };
+		5B60AEC92922BCE2000AA2A1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEC82922BCE2000AA2A1 /* DataManager.swift */; };
+		5B60AECC2922BEFA000AA2A1 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AECB2922BEFA000AA2A1 /* APIPath.swift */; };
+		5B60AECE2922BF15000AA2A1 /* APIMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AECD2922BF15000AA2A1 /* APIMode.swift */; };
+		5B60AED02922BF84000AA2A1 /* CharacterPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AECF2922BF84000AA2A1 /* CharacterPaths.swift */; };
+		5B60AED22922C074000AA2A1 /* RMLocationPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AED12922C074000AA2A1 /* RMLocationPaths.swift */; };
+		5B60AED42922C0E3000AA2A1 /* EpisodePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AED32922C0E3000AA2A1 /* EpisodePaths.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +49,16 @@
 		5B60AEB52922B50C000AA2A1 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		5B60AEB72922B60A000AA2A1 /* EpisodeBaseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeBaseInfo.swift; sourceTree = "<group>"; };
 		5B60AEB92922B63D000AA2A1 /* EpisodeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeInfo.swift; sourceTree = "<group>"; };
+		5B60AEBD2922B7B1000AA2A1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5B60AEBF2922B7DD000AA2A1 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		5B60AEC12922B8F4000AA2A1 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		5B60AEC52922BB72000AA2A1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5B60AEC82922BCE2000AA2A1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		5B60AECB2922BEFA000AA2A1 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		5B60AECD2922BF15000AA2A1 /* APIMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMode.swift; sourceTree = "<group>"; };
+		5B60AECF2922BF84000AA2A1 /* CharacterPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPaths.swift; sourceTree = "<group>"; };
+		5B60AED12922C074000AA2A1 /* RMLocationPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationPaths.swift; sourceTree = "<group>"; };
+		5B60AED32922C0E3000AA2A1 /* EpisodePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePaths.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +91,8 @@
 		5B60AE9029229FB7000AA2A1 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				5B60AEC72922BCCB000AA2A1 /* DataManagers */,
+				5B60AEBB2922B786000AA2A1 /* Services */,
 				5B60AE9F2922A4D7000AA2A1 /* Models */,
 				5B60AE9129229FB7000AA2A1 /* RickAndMortyAppApp.swift */,
 				5B60AE9329229FB7000AA2A1 /* ContentView.swift */,
@@ -127,6 +149,46 @@
 				5B60AEB92922B63D000AA2A1 /* EpisodeInfo.swift */,
 			);
 			path = EpisodeRelated;
+			sourceTree = "<group>";
+		};
+		5B60AEBB2922B786000AA2A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5B60AEBC2922B790000AA2A1 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5B60AEBC2922B790000AA2A1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B60AECA2922BDAB000AA2A1 /* Paths */,
+				5B60AEBD2922B7B1000AA2A1 /* Network.swift */,
+				5B60AEBF2922B7DD000AA2A1 /* NetworkingError.swift */,
+				5B60AEC12922B8F4000AA2A1 /* URLRequestBuilder.swift */,
+				5B60AEC52922BB72000AA2A1 /* NetworkManager.swift */,
+				5B60AECD2922BF15000AA2A1 /* APIMode.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5B60AEC72922BCCB000AA2A1 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				5B60AEC82922BCE2000AA2A1 /* DataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		5B60AECA2922BDAB000AA2A1 /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				5B60AECB2922BEFA000AA2A1 /* APIPath.swift */,
+				5B60AECF2922BF84000AA2A1 /* CharacterPaths.swift */,
+				5B60AED12922C074000AA2A1 /* RMLocationPaths.swift */,
+				5B60AED32922C0E3000AA2A1 /* EpisodePaths.swift */,
+			);
+			path = Paths;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,15 +261,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B60AEBE2922B7B1000AA2A1 /* Network.swift in Sources */,
 				5B60AEAA2922A581000AA2A1 /* CharLocation.swift in Sources */,
 				5B60AEA42922A510000AA2A1 /* CharacterInfo.swift in Sources */,
 				5B60AEB12922B31E000AA2A1 /* LocationBaseInfo.swift in Sources */,
+				5B60AEC62922BB72000AA2A1 /* NetworkManager.swift in Sources */,
 				5B60AEB62922B50C000AA2A1 /* Episode.swift in Sources */,
 				5B60AEA82922A571000AA2A1 /* Character.swift in Sources */,
 				5B60AEBA2922B63D000AA2A1 /* EpisodeInfo.swift in Sources */,
+				5B60AED22922C074000AA2A1 /* RMLocationPaths.swift in Sources */,
+				5B60AED02922BF84000AA2A1 /* CharacterPaths.swift in Sources */,
 				5B60AEAF2922B290000AA2A1 /* RMLocation.swift in Sources */,
+				5B60AEC92922BCE2000AA2A1 /* DataManager.swift in Sources */,
 				5B60AEB82922B60A000AA2A1 /* EpisodeBaseInfo.swift in Sources */,
+				5B60AECE2922BF15000AA2A1 /* APIMode.swift in Sources */,
+				5B60AED42922C0E3000AA2A1 /* EpisodePaths.swift in Sources */,
 				5B60AEA62922A55B000AA2A1 /* CharBaseInfo.swift in Sources */,
+				5B60AEC02922B7DD000AA2A1 /* NetworkingError.swift in Sources */,
+				5B60AECC2922BEFA000AA2A1 /* APIPath.swift in Sources */,
+				5B60AEC22922B8F4000AA2A1 /* URLRequestBuilder.swift in Sources */,
 				5B60AE9429229FB7000AA2A1 /* ContentView.swift in Sources */,
 				5B60AEB32922B359000AA2A1 /* RMLocationInfo.swift in Sources */,
 				5B60AE9229229FB7000AA2A1 /* RickAndMortyAppApp.swift in Sources */,
