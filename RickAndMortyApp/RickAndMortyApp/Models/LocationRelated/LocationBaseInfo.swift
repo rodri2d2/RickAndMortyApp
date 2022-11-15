@@ -8,9 +8,8 @@
 import Foundation
 
 /// Info model that contains very basic info about the whole API repose for all Locations (Refactor?)
-struct LocationBaseInfo {
+struct LocationBaseInfo: Codable {
     let count: Int
     let pages: Int
     let next: String
-    let prev: NSNull
 }

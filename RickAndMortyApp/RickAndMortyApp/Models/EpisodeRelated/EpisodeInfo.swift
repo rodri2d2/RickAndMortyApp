@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EpisodeInfo {
+struct EpisodeInfo: Codable {
     let info: EpisodeBaseInfo
     let episodes: [Episode]
 }

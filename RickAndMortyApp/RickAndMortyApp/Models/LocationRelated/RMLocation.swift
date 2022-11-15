@@ -10,7 +10,7 @@ import Foundation
 
 /// RM Stands Rick And Morty.
 /// Location Model itself
-struct RMLocation: Identifiable {
+struct RMLocation: Identifiable, Codable {
     let id: Int
     let name: String
     let type: String

@@ -9,7 +9,7 @@ import Foundation
 
 
 /// A Character Location model itself
-struct CharLocation {
+struct CharLocation: Codable {
     let name: String
     let url: String
 }

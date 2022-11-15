@@ -8,9 +8,8 @@
 import Foundation
 
 /// Info model that contains very basic info about the whole API repose for all Episodes (Refactor?)
-struct EpisodeBaseInfo {
+struct EpisodeBaseInfo: Codable {
     let count: Int
     let pages: Int
     let next: String
-    let prev: NSNull
 }

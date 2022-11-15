@@ -8,7 +8,7 @@
 import Foundation
 
 /// RMLocationInfo model to handle API reponse (Refactor?)
-struct RMLocationInfo {
+struct RMLocationInfo: Codable {
     let info: LocationBaseInfo
     let locations: [RMLocation]
 }

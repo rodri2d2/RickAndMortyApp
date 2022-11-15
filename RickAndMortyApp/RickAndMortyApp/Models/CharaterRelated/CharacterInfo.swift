@@ -9,7 +9,7 @@ import Foundation
 
 
 /// CharacterInfo model to handle API reponse (Refactor?)
-struct CharacterInfo {
+struct CharacterInfo: Codable {
     let info: CharBaseInfo
     let characters: [Character]
 }

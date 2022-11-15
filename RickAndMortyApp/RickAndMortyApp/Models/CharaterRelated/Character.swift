@@ -9,7 +9,7 @@ import Foundation
 
 
 /// A Character model itself
-struct Character: Identifiable {
+struct Character: Identifiable, Codable {
     let id: Int
     let name: String
     let status: String
