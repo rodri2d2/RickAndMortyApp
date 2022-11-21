@@ -12,4 +12,5 @@ class AllCharactersResquest: URLRequestBuilder {
     typealias Response = CharacterInfo
     var apiMode: ApiMode = .prod
     var path: APIPath = CharacterPaths.all
+    var method: HttpMethod = .GET
 }

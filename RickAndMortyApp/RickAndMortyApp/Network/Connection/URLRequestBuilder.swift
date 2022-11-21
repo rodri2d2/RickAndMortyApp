@@ -37,7 +37,6 @@ extension URLRequestBuilder {
         return baseURL
     }
     
-    var method: HttpMethod { .POST }
     var parameters: [String: String] { .init() }
     var body: [String: Any] { .init() }
     var headers: [String: String] { .init() }

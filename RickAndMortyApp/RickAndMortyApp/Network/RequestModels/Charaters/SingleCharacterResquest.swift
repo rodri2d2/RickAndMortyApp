@@ -13,6 +13,7 @@ class SingleCharacterResquest: URLRequestBuilder {
     typealias Response = Character
     var apiMode: ApiMode = .prod
     var path: APIPath
+    var method: HttpMethod = .GET
     
     init(with id: Int) {
         self.path = CharacterPaths.single(id: id)
