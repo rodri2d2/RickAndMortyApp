@@ -209,7 +209,6 @@
 		5B60AEBC2922B790000AA2A1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5B60AEC52922BB72000AA2A1 /* NetworkManager.swift */,
 				5B60AEBD2922B7B1000AA2A1 /* Network.swift */,
 			);
 			path = Services;
@@ -220,6 +219,7 @@
 			children = (
 				5B0D56392923EC2100534C93 /* Character */,
 				5B60AEC82922BCE2000AA2A1 /* DataManager.swift */,
+				5B60AEC52922BB72000AA2A1 /* NetworkManager.swift */,
 			);
 			path = DataManagers;
 			sourceTree = "<group>";
