@@ -7,4 +7,7 @@
 
 import Foundation
 
-class RouterViewModel: ObservableObject {}
+class RouterViewModel: ObservableObject {
+    @Published var screen: ScreenRoutes = .main
+    @Published var tab: TabRoutes = .characters
+}
