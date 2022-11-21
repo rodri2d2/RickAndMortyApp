@@ -51,6 +51,10 @@
 		5B8D0381292BE29D00522674 /* RMLocationPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AED12922C074000AA2A1 /* RMLocationPaths.swift */; };
 		5B8D0382292BE2A000522674 /* EpisodePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AED32922C0E3000AA2A1 /* EpisodePaths.swift */; };
 		5B8D0383292BE2DD00522674 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEA32922A510000AA2A1 /* CharacterInfo.swift */; };
+		5B916D2E292BEDED0012D575 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B916D2D292BEDED0012D575 /* RouterView.swift */; };
+		5B916D30292BEE2E0012D575 /* ScreensRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B916D2F292BEE2E0012D575 /* ScreensRoutes.swift */; };
+		5B916D32292BEE360012D575 /* TabRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B916D31292BEE360012D575 /* TabRoutes.swift */; };
+		5B916D36292BEEB00012D575 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B916D35292BEEB00012D575 /* RouterViewModel.swift */; };
 		5BB05A1F292BE32C00844DC1 /* CharBaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEA52922A55B000AA2A1 /* CharBaseInfo.swift */; };
 		5BB05A20292BE32E00844DC1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEA72922A571000AA2A1 /* Character.swift */; };
 		5BB05A21292BE33100844DC1 /* CharLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60AEA92922A581000AA2A1 /* CharLocation.swift */; };
@@ -104,6 +108,10 @@
 		5B8D036C292BD9C900522674 /* EpisodesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesDataManager.swift; sourceTree = "<group>"; };
 		5B8D0372292BDF4E00522674 /* RickAndMortyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8D0374292BDF4E00522674 /* RickAndMorty_PathGenerationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMorty_PathGenerationTest.swift; sourceTree = "<group>"; };
+		5B916D2D292BEDED0012D575 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		5B916D2F292BEE2E0012D575 /* ScreensRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensRoutes.swift; sourceTree = "<group>"; };
+		5B916D31292BEE360012D575 /* TabRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRoutes.swift; sourceTree = "<group>"; };
+		5B916D35292BEEB00012D575 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,10 +190,10 @@
 		5B60AE9029229FB7000AA2A1 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				5B916D2B292BEDBD0012D575 /* App */,
 				5B60AEC72922BCCB000AA2A1 /* DataManagers */,
 				5B60AEBB2922B786000AA2A1 /* Network */,
 				5B60AE9F2922A4D7000AA2A1 /* Models */,
-				5B60AE9129229FB7000AA2A1 /* RickAndMortyAppApp.swift */,
 				5B60AE9329229FB7000AA2A1 /* ContentView.swift */,
 				5B0D563C2923F0EE00534C93 /* TESTVm.swift */,
 				5B60AE9529229FB8000AA2A1 /* Assets.xcassets */,
@@ -327,6 +335,26 @@
 			path = RickAndMortyAppTests;
 			sourceTree = "<group>";
 		};
+		5B916D2B292BEDBD0012D575 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5B916D2C292BEDCF0012D575 /* Routes */,
+				5B60AE9129229FB7000AA2A1 /* RickAndMortyAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5B916D2C292BEDCF0012D575 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				5B916D2D292BEDED0012D575 /* RouterView.swift */,
+				5B916D35292BEEB00012D575 /* RouterViewModel.swift */,
+				5B916D2F292BEE2E0012D575 /* ScreensRoutes.swift */,
+				5B916D31292BEE360012D575 /* TabRoutes.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,10 +461,13 @@
 				5B60AEA42922A510000AA2A1 /* CharacterInfo.swift in Sources */,
 				5B0D563B2923EC3700534C93 /* CharacterDataManager.swift in Sources */,
 				5B8D036D292BD9C900522674 /* EpisodesDataManager.swift in Sources */,
+				5B916D2E292BEDED0012D575 /* RouterView.swift in Sources */,
+				5B916D30292BEE2E0012D575 /* ScreensRoutes.swift in Sources */,
 				5B8D0362292BD86200522674 /* SingleEpisodeRequest.swift in Sources */,
 				5B60AEB12922B31E000AA2A1 /* LocationBaseInfo.swift in Sources */,
 				5B60AEC62922BB72000AA2A1 /* NetworkManager.swift in Sources */,
 				5B60AEB62922B50C000AA2A1 /* Episode.swift in Sources */,
+				5B916D32292BEE360012D575 /* TabRoutes.swift in Sources */,
 				5B60AEA82922A571000AA2A1 /* Character.swift in Sources */,
 				5B0D563D2923F0EE00534C93 /* TESTVm.swift in Sources */,
 				5B60AEBA2922B63D000AA2A1 /* EpisodeInfo.swift in Sources */,
@@ -457,6 +488,7 @@
 				5B8D0365292BD8E400522674 /* AllLocationsResquest.swift in Sources */,
 				5B60AE9429229FB7000AA2A1 /* ContentView.swift in Sources */,
 				5B0D56382923EB8100534C93 /* SingleCharacterResquest.swift in Sources */,
+				5B916D36292BEEB00012D575 /* RouterViewModel.swift in Sources */,
 				5B60AEB32922B359000AA2A1 /* RMLocationInfo.swift in Sources */,
 				5B60AE9229229FB7000AA2A1 /* RickAndMortyAppApp.swift in Sources */,
 			);
