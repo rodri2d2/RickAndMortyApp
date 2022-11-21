@@ -12,4 +12,9 @@ import Foundation
 struct CharacterInfo: Codable {
     let info: CharBaseInfo
     let characters: [Character]
+    
+    enum CodingKeys: String, CodingKey {
+        case info
+        case characters = "results"
+    }
 }
