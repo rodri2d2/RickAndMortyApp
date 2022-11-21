@@ -11,4 +11,9 @@ import Foundation
 struct RMLocationInfo: Codable {
     let info: LocationBaseInfo
     let locations: [RMLocation]
+    
+    enum CodingKeys: String, CodingKey {
+        case info
+        case locations = "results"
+    }
 }
