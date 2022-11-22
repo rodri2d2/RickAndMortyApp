@@ -10,13 +10,17 @@ import SwiftUI
 
 enum ScreenRoutes {
     
-    case main
+    case home
+    case characters
+    case episodes
     
     @ViewBuilder
     var view: some View {
         switch self {
-        case .main: Text("Main view")
-            
+        case .home: HomeView()
+        case .characters: CharactersView()
+        case .episodes: RMLocationView()
+        
         }
     }
 }

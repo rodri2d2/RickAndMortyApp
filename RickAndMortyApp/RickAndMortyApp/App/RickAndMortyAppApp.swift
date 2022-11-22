@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct RickAndMortyAppApp: App {
+    
+    @StateObject var routerVm = RouterViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView(vm: TESTVm())
+            RouterView()
         }
     }
 }
