@@ -10,6 +10,7 @@ import Combine
 
 class RMLocationDataManager: DataManager {
     
+    var localDataService: LocalDataManager = LocalFileDataManager.shared
     var networkService: Network = NetworkManager.shared
     
     func fetchAll(request: AllLocationsResquest) -> AnyPublisher<AllLocationsResquest.Response, Error> {

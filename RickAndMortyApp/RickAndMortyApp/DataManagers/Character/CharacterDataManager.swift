@@ -10,6 +10,7 @@ import Combine
 
 class CharacterDataManager: DataManager {
     
+    var localDataService: LocalDataManager = LocalFileDataManager.shared
     var networkService: Network = NetworkManager.shared
     
     func fetchAll(request: AllCharactersResquest) -> AnyPublisher<AllCharactersResquest.Response, Error> {

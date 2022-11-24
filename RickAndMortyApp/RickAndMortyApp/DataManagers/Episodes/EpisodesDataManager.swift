@@ -10,6 +10,7 @@ import Combine
 
 class EpisodesDataManager: DataManager {
     
+    var localDataService: LocalDataManager = LocalFileDataManager.shared
     var networkService: Network = NetworkManager.shared
     
     func fetchAll(request: AllEpisodesRequest) -> AnyPublisher<AllEpisodesRequest.Response, Error> {
