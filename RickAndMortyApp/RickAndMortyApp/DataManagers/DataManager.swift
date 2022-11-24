@@ -9,4 +9,5 @@ import Foundation
 
 protocol DataManager {
     var networkService: Network { get set }
+    var localDataService: LocalDataManager { get set }
 }
