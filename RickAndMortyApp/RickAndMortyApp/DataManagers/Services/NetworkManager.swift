@@ -20,6 +20,7 @@ class NetworkManager: Network {
             .dataTaskPublisher(for: request)
             .map { $0.data }
             .decode(type: T.Response.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 }
