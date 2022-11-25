@@ -12,8 +12,7 @@ struct ImageComponent: View {
     @StateObject var vm: ImageComponentViewModel
     
     init(_ url: URL) {
-        let imageModel = ImageModel(url)
-        let state = ImageComponentState(image: imageModel)
+        let state = ImageComponentState()
         _vm =  StateObject(wrappedValue: ImageComponentViewModel(state: state))
     }
     
@@ -26,15 +25,9 @@ struct ImageComponent: View {
                     .scaledToFit()
             } else {
                 Image(systemName: "questionmark")
-                    .resizable()
-                    .frame(width: 150, height: 150)
             }
         }
-        .onAppear {
-            vm.handle(.onAppear)
-        }
     }
-
 }
 
 struct ImageComponent_Previews: PreviewProvider {

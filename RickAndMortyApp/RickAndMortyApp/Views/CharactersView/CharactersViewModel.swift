@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Combine
 
 struct CharacterState {
     var dataState: DataModelState  = .idle
@@ -14,42 +13,23 @@ struct CharacterState {
 }
 
 enum CharactersAction {
-    case onAppear
+    case load
 }
 
 class CharactersViewModel: ViewModel {
-    
+        
     typealias State = CharacterState
     typealias Action = CharactersAction
     
-    // MARK: - Publishers
     @Published var state: CharacterState
     
-    // MARK: - VM only
-    private var characterDataManager = CharacterDataManager()
-    private var cancellables = Set<AnyCancellable>()
     
     init(state: CharacterState) {
         self.state = state
     }
     
     func handle(_ action: CharactersAction) {
-        switch action {
-        case .onAppear: loadCharacters()
-
-        }
-    }
-    
-    private func loadCharacters() {
-        let _ = characterDataManager
-            .fetchAll(request: AllCharactersResquest())
-            .sink { error in
-                print("\(error)")
-            } receiveValue: { charactersInfo in
-               self.state.characters = charactersInfo.characters
-                
-            }
-            .store(in: &cancellables)
+        
     }
     
 }

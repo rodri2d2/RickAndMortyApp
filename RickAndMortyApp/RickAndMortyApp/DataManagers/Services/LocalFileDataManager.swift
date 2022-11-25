@@ -8,6 +8,8 @@
 import Foundation
 
 class LocalFileDataManager: LocalDataManager {
+    
     static let shared = LocalFileDataManager()
+    
     private init() {}
 }

@@ -8,27 +8,8 @@
 import SwiftUI
 
 struct CharactersView: View {
-    
-    @EnvironmentObject var routerVM: RouterViewModel
-    @StateObject var viewModel = CharactersViewModel(state: .init())
-    
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            LazyVStack {
-                ForEach(viewModel.state.characters) { character in
-                    Text(character.name)
-                    
-                    if let url = URL(string: character.image) {
-                        ImageComponent(url)
-                    }
-                    
-                }
-            }
-            
-        }
-        .onAppear{
-            viewModel.handle(.onAppear)
-        }
+        Text("Characters")
     }
 }
 
