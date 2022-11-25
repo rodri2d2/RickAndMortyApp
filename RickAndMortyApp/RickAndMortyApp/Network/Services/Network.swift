@@ -10,4 +10,5 @@ import Combine
 
 protocol Network {
     func execute<T: URLRequestBuilder>(for request: T) -> AnyPublisher<T.Response, Error>
+//    func execute(url: URL) -> AnyPublisher<Data, Error>
 }

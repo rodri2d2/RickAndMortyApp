@@ -66,6 +66,8 @@
 		5B8F6DC9292F783200700AC3 /* ImageLocallFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F6DC8292F783200700AC3 /* ImageLocallFileManager.swift */; };
 		5B8F6DCC292F795C00700AC3 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F6DCB292F795C00700AC3 /* LocalDataManager.swift */; };
 		5B8F6DCE292F7BD000700AC3 /* LocalFileDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F6DCD292F7BD000700AC3 /* LocalFileDataManager.swift */; };
+		5B8F6DD1292FDB3D00700AC3 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F6DD0292FDB3D00700AC3 /* ImageModel.swift */; };
+		5B8F6DD3292FE68300700AC3 /* NONEPAths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F6DD2292FE68300700AC3 /* NONEPAths.swift */; };
 		5B916D2E292BEDED0012D575 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B916D2D292BEDED0012D575 /* RouterView.swift */; };
 		5B916D30292BEE2E0012D575 /* ScreensRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B916D2F292BEE2E0012D575 /* ScreensRoutes.swift */; };
 		5B916D32292BEE360012D575 /* TabRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B916D31292BEE360012D575 /* TabRoutes.swift */; };
@@ -138,6 +140,8 @@
 		5B8F6DC8292F783200700AC3 /* ImageLocallFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLocallFileManager.swift; sourceTree = "<group>"; };
 		5B8F6DCB292F795C00700AC3 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 		5B8F6DCD292F7BD000700AC3 /* LocalFileDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileDataManager.swift; sourceTree = "<group>"; };
+		5B8F6DD0292FDB3D00700AC3 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		5B8F6DD2292FE68300700AC3 /* NONEPAths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NONEPAths.swift; sourceTree = "<group>"; };
 		5B916D2D292BEDED0012D575 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		5B916D2F292BEE2E0012D575 /* ScreensRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensRoutes.swift; sourceTree = "<group>"; };
 		5B916D31292BEE360012D575 /* TabRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRoutes.swift; sourceTree = "<group>"; };
@@ -245,6 +249,7 @@
 		5B60AE9F2922A4D7000AA2A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5B8F6DCF292FDB3400700AC3 /* Image */,
 				5B60AEB42922B4B6000AA2A1 /* EpisodeRelated */,
 				5B60AEAD2922B25E000AA2A1 /* LocationRelated */,
 				5B60AEAC2922B24D000AA2A1 /* CharaterRelated */,
@@ -322,6 +327,7 @@
 				5B60AECF2922BF84000AA2A1 /* CharacterPaths.swift */,
 				5B60AED12922C074000AA2A1 /* RMLocationPaths.swift */,
 				5B60AED32922C0E3000AA2A1 /* EpisodePaths.swift */,
+				5B8F6DD2292FE68300700AC3 /* NONEPAths.swift */,
 			);
 			path = Paths;
 			sourceTree = "<group>";
@@ -467,6 +473,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		5B8F6DCF292FDB3400700AC3 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				5B8F6DD0292FDB3D00700AC3 /* ImageModel.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		5B916D2B292BEDBD0012D575 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,8 +613,10 @@
 				5B916D2E292BEDED0012D575 /* RouterView.swift in Sources */,
 				5B916D30292BEE2E0012D575 /* ScreensRoutes.swift in Sources */,
 				5B8F6DC5292F776500700AC3 /* ImageDataManager.swift in Sources */,
+				5B8F6DD1292FDB3D00700AC3 /* ImageModel.swift in Sources */,
 				5B8F6DC2292F703500700AC3 /* ImageComponentViewModel.swift in Sources */,
 				5B8D0362292BD86200522674 /* SingleEpisodeRequest.swift in Sources */,
+				5B8F6DD3292FE68300700AC3 /* NONEPAths.swift in Sources */,
 				5B60AEB12922B31E000AA2A1 /* LocationBaseInfo.swift in Sources */,
 				5B8F6DBF292F701200700AC3 /* ImageComponent.swift in Sources */,
 				5B60AEC62922BB72000AA2A1 /* NetworkManager.swift in Sources */,

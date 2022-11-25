@@ -8,15 +8,13 @@
 import Foundation
 
 class ImageResquest: URLRequestBuilder {
-    typealias Response = CharacterInfo
+    typealias Response = Data
     var apiMode: ApiMode = .prod
-    var path: APIPath = CharacterPaths.all
+    var path: APIPath = NONEPaths.none
     var method: HttpMethod = .GET
     var baseURL: URL
     
-    init(path: APIPath, method: HttpMethod, baseURL: URL) {
-        self.path = path
-        self.method = method
+    init(baseURL: URL) {
         self.baseURL = baseURL
     }
 }
