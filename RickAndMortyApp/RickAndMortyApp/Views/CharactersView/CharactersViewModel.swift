@@ -36,7 +36,7 @@ class CharactersViewModel: ViewModel {
     func handle(_ action: CharactersAction) {
         switch action {
         case .onAppear: loadCharacters()
-
+            
         }
     }
     
@@ -47,7 +47,6 @@ class CharactersViewModel: ViewModel {
                 print("\(error)")
             } receiveValue: { charactersInfo in
                self.state.characters = charactersInfo.characters
-                
             }
             .store(in: &cancellables)
     }

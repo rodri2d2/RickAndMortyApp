@@ -14,14 +14,9 @@ struct CharactersView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            LazyVStack {
+            LazyVStack(spacing: 8 ) {
                 ForEach(viewModel.state.characters) { character in
-                    Text(character.name)
-                    
-                    if let url = URL(string: character.image) {
-                        ImageComponent(url)
-                    }
-                    
+                    cellView(character: character)
                 }
             }
             
@@ -30,6 +25,32 @@ struct CharactersView: View {
             viewModel.handle(.onAppear)
         }
     }
+    
+    private func cellView(character: Character) -> some View {
+        ZStack(alignment: .leading) {
+            if let url = URL(string: character.image) {
+                ImageComponent(url)
+            }
+            
+            Rectangle()
+                .rotationEffect(
+                    Angle(degrees: 90),
+                    anchor: .bottomLeading
+                )
+                .background {
+                    Color.black.opacity(0.5)
+                }
+                .frame(maxWidth: 100)
+                .overlay {
+                    Text(character.name)
+                        .font(.title)
+                        .foregroundColor(.white).rotationEffect(Angle(degrees: 90))
+                        .frame(width: 200, height: 100)
+                }
+        }
+        
+    }
+
 }
 
 struct CharactersView_Previews: PreviewProvider {

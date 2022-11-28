@@ -25,9 +25,9 @@ struct ImageComponent: View {
                     .resizable()
                     .scaledToFit()
             } else {
-                Image(systemName: "questionmark")
+                Image("loadImage")
                     .resizable()
-                    .frame(width: 150, height: 150)
+                    .frame(maxWidth: .infinity, idealHeight: 150)
             }
         }
         .onAppear {

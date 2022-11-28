@@ -21,7 +21,7 @@ struct HomeView: View {
             
             RMLocationView()
                 .tabItem {
-                    Label("Location", systemImage: "magnifyingglass")
+                    Label("Location", systemImage: "globe.europe.africa.fill")
                 }
                 .tag(TabRoutes.episodes)
         }
